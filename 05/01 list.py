@@ -51,3 +51,8 @@ samson, ehis, michael = another_value
 print(samson)
 print(ehis)
 print(michael)
+
+# sorting values in a list
+another_list.sort()
+print("After sorting another list")
+print(another_list)
