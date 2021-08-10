@@ -56,3 +56,7 @@ print(michael)
 another_list.sort()
 print("After sorting another list")
 print(another_list)
+
+
+another_special_list = [x for x in another_value]
+print(another_special_list)
