@@ -16,3 +16,8 @@ print(result)
 optional_regex = '\+?\d{1}-\d{3}-\d{3}-\d{4}'
 optional_result = re.findall(optional_regex, general_text)
 print(optional_result)
+
+# matching ranges
+ranges = '[0-9]{1,}'
+ranges_matcher = re.findall(ranges, general_text)
+print(ranges_matcher)
