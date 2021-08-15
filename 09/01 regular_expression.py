@@ -21,3 +21,10 @@ print(optional_result)
 ranges = '[0-9]{1,}'
 ranges_matcher = re.findall(ranges, general_text)
 print(ranges_matcher)
+
+# groups regex
+str_with_curse = 'Hey you motherfucker, fuck youman, this is bullshit, you little shithole, donald trump always said nigeria is a shit hole'
+regex_express = r'(?:fuck|FUCK|shit|shithole|bullshit)'
+curse_word_regex = re.compile(regex_express)
+matches = curse_word_regex.match(str_with_curse)
+print(matches)
