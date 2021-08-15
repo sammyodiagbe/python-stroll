@@ -25,8 +25,7 @@ print(ranges_matcher)
 # groups regex
 str_with_curse = 'Hey you motherfucker, - && 007james fuck youman, this is bullshit, you little shithole, donald trump always said nigeria is a shit hole'
 regex_express = r'(?:fuck|FUCK|shit|shithole|bullshit)'
-curse_word_regex = re.compile(regex_express)
-matches = curse_word_regex.match(str_with_curse)
+print(re.sub(regex_express, 'no-curse', str_with_curse))
 # print(matches)
 
 # start of string
