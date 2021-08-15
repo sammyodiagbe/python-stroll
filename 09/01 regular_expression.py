@@ -31,3 +31,15 @@ print(re.sub(regex_express, 'no-curse', str_with_curse))
 # start of string
 regex = re.findall(r"(?:(?:fuck|mother|shit)fucker|f\S+)", str_with_curse)
 print(regex)
+
+
+# understanding groups
+regex_list = ['guru99 get', "gurus99 give", "guru selenium"]
+
+for element in regex_list:
+    z = re.match(r"(g\w+)\W(g\w+)", element)
+    if z:
+        # this prints out the groups in the form of a tuple
+        print(z.groups())
+        # this actually prints our the match
+        print(z.group())
