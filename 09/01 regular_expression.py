@@ -43,3 +43,13 @@ for element in regex_list:
         print(z.groups())
         # this actually prints our the match
         print(z.group())
+
+
+# re.search goes through all the string but returns the first match
+regex_str = "Our deepest fear odiagbesamsonosaro@gmail.com is some random talk"
+match_email = r'[0-9_\.a-zA-Z]{3,}@[a-z0-9A-Z]{2,}\.(?:com|ng|net|xyz|admin)'
+search = re.search(match_email, regex_str)
+if search:
+    print('found a match ', search)
+else:
+    print('no match found')
